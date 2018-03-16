@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0ff0ff"
+    tools:context="mx.edu.ittepic.proyectounidad2_zulmacoronel.AgregarObra">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="105dp"
+        android:layout_marginTop="8dp"
+        android:text="AGREGAR OBRA"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/montoedit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/agregaro"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginStart="148dp"
+        android:gravity="center"
+        android:text="AGREGAR"
+
+        app:layout_constraintBottom_toTopOf="@+id/reco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fechaini2" />
+
+    <Button
+        android:id="@+id/fechafin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="39dp"
+        android:gravity="center"
+        android:text="FECHA FIN"
+
+        app:layout_constraintBottom_toTopOf="@+id/agregaro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fechaini2"
+        app:layout_constraintTop_toBottomOf="@+id/montoedit"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <Button
+        android:id="@+id/fechaini2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="216dp"
+
+        android:gravity="center"
+        android:text="FECHA INICIO"
+
+        app:layout_constraintBottom_toTopOf="@+id/agregaro"
+        app:layout_constraintEnd_toStartOf="@+id/fechafin2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/adecripo"
+        android:layout_width="215dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Descripcion"
+        android:inputType="textPersonName"
+
+        app:layout_constraintBottom_toTopOf="@+id/montoedit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/montoedit"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Monto"
+        android:inputType="textPersonName"
+
+        app:layout_constraintBottom_toTopOf="@+id/fechaini2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adecripo" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reco"
+        android:layout_width="0dp"
+        android:layout_height="165dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adecripo"
+        app:layout_constraintVertical_bias="1.0" />
+</android.support.constraint.ConstraintLayout>

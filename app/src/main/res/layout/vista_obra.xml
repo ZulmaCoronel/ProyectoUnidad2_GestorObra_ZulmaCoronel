@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:layout_margin="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:cardElevation="5dp"
+        app:contentPadding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff0f0">
+
+            <ImageView
+                android:id="@+id/imgobra"
+                android:layout_width="100dp"
+                android:layout_height="86dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.166"
+                app:srcCompat="@drawable/cons" />
+
+            <TextView
+                android:id="@+id/descrio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="129dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="4dp"
+                android:text="Descriocion de la obra"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.175"
+                app:layout_constraintStart_toEndOf="@+id/imgobra"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/montoo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="200dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="8dp"
+                android:text="Monto"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.642"
+                app:layout_constraintStart_toEndOf="@+id/imgobra"
+                app:layout_constraintTop_toBottomOf="@+id/descrio" />
+
+            <CheckBox
+                android:id="@+id/finalo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="120dp"
+                android:layout_marginStart="6dp"
+                android:checked="false"
+                android:enabled="false"
+                android:text="Obra Finalizada"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imgobra"
+                app:layout_constraintTop_toBottomOf="@+id/montoo"
+                app:layout_constraintVertical_bias="0.104" />
+
+            <TextView
+                android:id="@+id/fechainio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="84dp"
+                android:text="fecha inicio"
+                app:layout_constraintBottom_toBottomOf="@+id/fechafino"
+                app:layout_constraintEnd_toStartOf="@+id/fechafino"
+                app:layout_constraintStart_toEndOf="@+id/imgobra"
+                app:layout_constraintTop_toTopOf="@+id/fechafino"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/fechafino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="38dp"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="108dp"
+                android:text="fecha fin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/fechainio"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nombre_cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="84dp"
+                android:text="Cliente"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.365"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

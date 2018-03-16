@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ProyectoUnidad2_ZulmaCoronel</string>
+    <string-array name="actividad">
+        <item>Albañileria</item>
+        <item>Operador</item>
+        <item>Chalan</item>
+        <item>Piso/azulejo</item>
+        <item>Tuberia</item>
+        <item>Cableado Electrico</item>
+    </string-array>
+</resources>
